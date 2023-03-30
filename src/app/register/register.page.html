@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="tertiary" class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>REGISTER</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p align="center">Please fill in the form.</p>
+  <ion-item>
+    <ion-label position="floating">E-mail</ion-label>
+    <ion-input type="email"[(ngModel)]="user.email"required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Password</ion-label>
+    <ion-input type="password"[(ngModel)]="user.password" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Full Name</ion-label>
+    <ion-input type="text"[(ngModel)]="user.fullname" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Phone Number</ion-label>
+    <ion-input type="text"[(ngModel)]="user.phonenum" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">House Unit</ion-label>
+    <ion-input type="text"[(ngModel)]="user.houseunit" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Father's Name</ion-label>
+    <ion-input type="text"[(ngModel)]="user.fathers" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Mother's Name</ion-label>
+    <ion-input type="text"[(ngModel)]="user.mothers" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="stacked">Birthday</ion-label>
+    <ion-input type="date"[(ngModel)]="user.birthday" required></ion-input>
+  </ion-item>
+
+  <ion-button
+  class="ion-padding"
+  expand="full"
+  shape="round"
+  color="tertiary"
+  (click)="register(user)">
+  SUBMIT
+</ion-button>
+</ion-content>
+
+

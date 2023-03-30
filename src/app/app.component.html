@@ -1,0 +1,40 @@
+<ion-app>
+  <ion-menu content-id="main" menuId="main-menu" side="start" type="reveal">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title class="ion-text-center">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-menu-toggle>
+      <ion-list>
+        <ion-item [routerLink]="['/e-mengaji']">
+          <ion-icon name="home" slot="start"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/profile']">
+          <ion-icon name="laptop-outline" slot="start"></ion-icon>
+          <ion-label>Profile</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/about']">
+          <ion-icon name="globe-outline" slot="start"></ion-icon>
+          <ion-label>About</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/activities']">
+          <ion-icon name="videocam-outline" slot="start"></ion-icon>
+          <ion-label>Activities</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/contact']">
+          <ion-icon name="chatbubbles-outline" slot="start"></ion-icon>
+          <ion-label>Contact Us</ion-label>
+        </ion-item>
+        <ion-item [routerLink]="['/home']">
+          <ion-icon name="power-outline" slot="start"></ion-icon>
+          <ion-label>Logout</ion-label>
+        </ion-item>
+      </ion-list>
+      </ion-menu-toggle>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-app>

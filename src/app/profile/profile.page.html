@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar color="danger" class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>My Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content [fullscreen]="true">
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>My Profile</ion-card-title>
+      </ion-card-header>
+    </ion-card>
+  
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ userProfile?.fullname }}</ion-card-title>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <ion-item>
+          <ion-icon slot="start" name="mail"></ion-icon>
+          <ion-label>{{ userProfile?.email }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="call"></ion-icon>
+          <ion-label>{{ userProfile?.phoneno }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="home"></ion-icon>
+          <ion-label>{{ userProfile?.houseunit }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="glasses"></ion-icon>
+          <ion-label>{{ userProfile?.fathers }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="rose"></ion-icon>
+          <ion-label>{{ userProfile?.mothers }}</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon slot="start" name="balloon"></ion-icon>
+          <ion-label>{{ userProfile?.birthday }}</ion-label>
+        </ion-item>
+        
+      </ion-card-content>
+    </ion-card>
+  </ion-content>
+
+
